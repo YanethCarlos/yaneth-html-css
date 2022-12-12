@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1,h2,h3{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --red: #9B1003;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(../COMP_YANETH/img/pexels-vlada-karpovich-6802983.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.contenedor-header{
+    width: 100%;
+    height: 80px;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--red);
+}
+.logo{
+    width: 25%;
+    padding: 0 0 0 15px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.logo img{
+    width:65px;
+}
+.logo h1{
+    color: white;
+    margin-top: 10px;
+    font-size: 22px;
+}
+.logo span{
+    color: rgb(151, 96, 18);
+}
+nav{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 5px 18px;
+}
+nav a:hover{
+    background-color: white;
+    color: var(--red);
+    transition: .8s;
+}
+
+
+
+
+
+.productos{
+    width: 100%;
+    height:auto;
+    flex-direction: column;
+    display: flex;
+}
+.productos h1{
+    text-align: center;
+    font-size: 33px;
+    padding: 20px 0;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    padding: 0 20px;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.caja{
+    width: 30%;
+    margin: 15px;
+    display: flex;
+    border: 2px solid rgba(43, 43, 43, 0.158);
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    box-shadow: 0 0 15px rgba(94, 94, 94, 0.418);
+}
+.producto{
+    width: 100%;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+.precio{
+    margin: 300px 0 0 160px;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    background-color: red;
+}
+.precio #precio{
+    color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 0;
+    font-size: 15px;
+}
+.nombre{
+    width: 100%;
+    height: 20%;
+}
+.nom-producto #nombre{
+    color: black;
+    padding: 0;
+    font-size: 23px;
+}
+
+@media screen and (max-width:1200px){
+    .caja{
+        width: 40%;
+    }
+}
+@media screen and (max-width:754px){
+    .producto #nombre{
+        font-size: 20px;
+    }
+    .producto #precio{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:600px){
+    .caja{
+        width: 90%;
+    }
+}
+.cafe1 .caja:nth-child(1) .img{
+    background-image: url(./media/1.jpg);
+}
+.cafe1 .caja:nth-child(2) .img{
+    background-image: url(./media/2.jpg);
+}
+.cafe1 .caja:nth-child(3) .img{
+    background-image: url(./media/3.jpg);
+}
+.cafe1 .caja:nth-child(4) .img{
+    background-image: url(./media/4.jpg);
+}
+.cafe1 .caja:nth-child(5) .img{
+    background-image: url(./media/5.jpg);
+}
+.cafe1 .caja:nth-child(6) .img{
+    background-image: url(./media/6.jpg);
+}
+
+
+
+
+.cafe2 .caja:nth-child(1) .img{
+    background-image: url(./media/IMG-20221212-WA0024.jpg);
+}
+.cafe2 .caja:nth-child(2) .img{
+    background-image: url(./media/licor\ 02.jpg);
+}
+.cafe2 .caja:nth-child(3) .img{
+    background-image: url(./media/licor\ 03\ .png);
+}
+.cafe2 .caja:nth-child(4) .img{
+    background-image: url(./media/licor\ 04\ .jpg);
+}
+.cafe2 .caja:nth-child(5) .img{
+    background-image: url(./media/licor\ 05\ .jpg);
+}
+.cafe2 .caja:nth-child(6) .img{
+    background-image: url(./media/licor\ 06\ .jpg);
+}
+
+
+
+
+
+.cafe3 .caja:nth-child(1) .img{
+    background-image: url(./media/helado\ 01.jpg);
+}
+.cafe3 .caja:nth-child(2) .img{
+    background-image: url(./media/helado\ 02.jpg);
+}
+.cafe3 .caja:nth-child(3) .img{
+    background-image: url(./media/helado\ 03.jpg);
+}
+.cafe3 .caja:nth-child(4) .img{
+    background-image: url(./media/helado\ 04.jpg);
+}
+.cafe3 .caja:nth-child(5) .img{
+    background-image: url(./media/helado\ 05.jpg);
+}
+.cafe3 .caja:nth-child(6) .img{
+    background-image: url(./media/helado\ 06.jpg);
+}
+
+
+
+
+.cafe4 .caja:nth-child(1) .img{
+    background-image: url(./media/exo\ 01.jpg);
+}
+.cafe4 .caja:nth-child(2) .img{
+    background-image: url(./media/exo\ 02.jpg);
+}
+.cafe4 .caja:nth-child(3) .img{
+    background-image: url(./media/exo\ 03.jpg);
+}
+.cafe4 .caja:nth-child(4) .img{
+    background-image: url(./media/exo\ 04.jpg);
+}
+.cafe4 .caja:nth-child(5) .img{
+    background-image: url(./media/IMG-20221212-WA0035.jpg);
+}
+.cafe4 .caja:nth-child(6) .img{
+    background-image: url(./media/IMG-20221212-WA0031.jpg);
+}
+
+
+
+
+.cafe5 .caja:nth-child(1) .img{
+    background-image: url(./media/dulce\ 01.jpg);
+}
+.cafe5 .caja:nth-child(2) .img{
+    background-image: url(./media/dulce\ 02.jpg);
+}
+.cafe5 .caja:nth-child(3) .img{
+    background-image: url(./media/dulce\ 03.jpg);
+}
+.cafe5 .caja:nth-child(4) .img{
+    background-image: url(./media/dulce\ 05.jpg);
+}
+.cafe5 .caja:nth-child(5) .img{
+    background-image: url(./media/dulce\ 04.jpg);
+}
+.cafe5 .caja:nth-child(6) .img{
+    background-image: url(./media/cafe\ solo.png);
+}
+
+
+
+
+
+
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 180px;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navega{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.navega nav{
+    margin: 0;
+}
+.navega nav a:hover{
+    color:black;
+}
+.navega h1{
+    padding: 30px 0 0 15px;
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+}
+.redes{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.reds{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
